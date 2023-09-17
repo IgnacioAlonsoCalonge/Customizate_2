@@ -1,0 +1,49 @@
+.contenedor_carrito_compra{
+    display: grid;
+    grid-template-columns: 70% 20%;
+    gap: 5%;
+    position: relative;
+}
+
+#compra{
+    margin-top: 4rem;
+    min-height: 100vh;
+}
+
+.compra_descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.compras_tarjetas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prueba{
+    margin-top: 5rem;
+}
+
+
+.compra_detalles_pago h2{
+    width: max-content;
+  }
+
+
+  .a_112{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .a_112 h4{
+    font-size: 1.3rem;
+  }
+
+
+

@@ -1,0 +1,72 @@
+.section_tarjeta{
+    width: 80%;
+    height: 300px;
+    border: 2px rgb(148, 148, 148) solid;
+    display: flex;
+    position: relative;
+    margin-right: 0;
+    margin-top: 1.5rem;
+    box-shadow: 20px 0px 30px -15px black;
+}
+
+.section_tarjeta img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.tarjetas_descripcion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.tarjetas_title_cruz{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cantidad_precio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cantidad_precio h4{
+    font-size: 1.3rem;
+}
+
+.cerrar{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.cerrar::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background:rgb(95, 95, 95);
+    transform: rotate(45deg) translatey(-50%);
+}
+
+.cerrar::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background:rgb(95, 95, 95);
+    transform: rotate(-45deg) translatey(-50%);
+}

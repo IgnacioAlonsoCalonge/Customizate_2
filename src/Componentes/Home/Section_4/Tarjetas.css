@@ -1,0 +1,72 @@
+.section_4_tarjetas{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.section_4_capa{
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    transition: all 0.2s ease;
+}
+
+.section_4_capa:hover{
+    opacity: 0.8;
+    z-index: 5;
+}
+
+
+.section_4_fotos {
+    width: 100%;
+    height: 80%;
+}
+
+.section_4_fotos img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #dfe7e7;
+}
+
+.section_4_descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    min-height: 140px;
+}
+
+.section_4_titulo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_4_titulo h1{
+    font-family: "Montserrat";
+    color: black;
+    font-size: 1.5rem;
+}
+
+.section_4_titulo p{
+    color: rgb(0, 0, 0);
+    font-family: "montserrat";
+    font-size: 1rem;
+}
+
+.section_4_precio h1{
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    position: relative;
+}
+
+@media screen and (max-width: 890px ) {
+    .section_4_titulo h1{
+        font-size: 1.2rem;
+    }
+}

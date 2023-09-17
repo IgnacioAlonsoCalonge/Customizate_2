@@ -1,0 +1,159 @@
+.section_cat_tarjetas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.my_icon{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  z-index: 4;
+  cursor: grab;
+}
+
+
+.section_cat_fotos {
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+
+.foto_camis {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.section_cat_descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    min-height: 140px;
+}
+
+.section_cat_titulo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_cat_titulo h1{
+    font-family: "Montserrat";
+    color: black;
+    font-size: 1.2rem;
+}
+
+.section_cat_titulo p{
+    color: rgb(0, 0, 0);
+    font-family: "montserrat";
+    font-size: 1rem;
+}
+
+.section_cat_precio h1{
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.foto_estampado1 {
+    position: absolute;
+    z-index: 3;
+    max-width: 27%;
+    max-height: 27%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-60%);
+  }
+
+  .foto_estampado2 {
+    position: absolute;
+    z-index: 3;
+    max-width: 25%;
+    max-height: 25%;
+    top: 52%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-60%);
+  }
+
+  .foto_estampado3 {
+    position: absolute;
+    z-index: 3;
+    max-width: 22.5%;
+    max-height: 22.5%;
+    top: 47%;
+    left: 51.2%;
+    transform: translateX(-50%) translateY(-60%);
+  }
+
+  .foto_estampado4 {
+    position: absolute;
+    z-index: 3;
+    max-width: 25%;
+    max-height: 25%;
+    top: 51%;
+    left: 51%;
+    transform: translateX(-50%) translateY(-60%);
+  }
+
+  .my_icon_2{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    z-index: 4;
+    cursor: grab;
+  }
+
+  .swiper img {
+    border: none;
+    transition: none;
+  }
+
+  .foto_camis_2{
+    position: absolute;
+    z-index: 3;
+    max-width: 100%;
+    max-height: 100%;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-60%);
+  }
+
+  .swiper img:hover {
+    background-color: none;
+  }
+
+  .colores_estamp1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .blend_multiply{
+    mix-blend-mode: multiply;
+    opacity: 1;
+  }
+
+  .blend_normal{
+    mix-blend-mode:normal;
+    opacity: 0.8;
+  }
+
+  .blend_bicolor{
+    opacity: 1;
+  }
+
+@media screen and (max-width: 890px ) {
+    .section_cat_titulo h1{
+        font-size: 1.2rem;
+    }
+}

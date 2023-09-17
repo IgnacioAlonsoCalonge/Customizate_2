@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+.prlx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+
+.recuadro_foto{
+    width: 30%;
+    height:550px;
+    position: relative;
+    overflow: hidden;
+}
+
+.recuadro_foto_1{
+    width: 30%;
+    height:550px;
+    position: absolute;
+}
+
+.f1{
+    width: 110%;
+    position: absolute;
+    right: -60px;
+    top: 0;
+    z-index: 100;
+}
+
+.recuadro_foto h1{
+    font-size: 4rem;
+    font-family: "Oswald";
+    letter-spacing: 0.6rem;
+    z-index: 4;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    text-shadow: 1rem 0rem 2rem;
+}
+
+.parallax{
+    transition: 0.5s cubic-bezier(0,.38,.57,1.19);
+}
+
+.f2{
+    width: 105%;
+    position: absolute;
+    left: 15px;
+    top: 0;
+    z-index: 5;
+}
+
+.f3{
+    width: 106%;
+    position: absolute;
+  
+    top: 0;
+    z-index: 4;
+}
+
+.f4{
+    width: 110%;
+    position: absolute;
+    left: -120px;
+    top: 0;
+    z-index: 5;
+}
+
+.f5{
+    width: 110%;
+    position: absolute;
+    left: -65px;
+    bottom:-15px;
+    z-index: 2;
+}
+
+.f6{
+    width: 110%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.f8{
+    width: 110%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+
+

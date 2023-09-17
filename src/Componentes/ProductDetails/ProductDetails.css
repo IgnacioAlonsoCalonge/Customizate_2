@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:wght@700&display=swap');
+
+.contenedor_product_details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7rem;
+}
+
+.product_details_foto{
+    width: 40%;
+    height: 45rem;
+    border-radius: 1.2rem;
+    border: solid 6px rgb(70, 70, 70);
+    overflow: hidden;
+}
+
+.product_details_foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product_details_descripcion{
+    width: 40%;
+    height: 45rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.product_details_descripcion p{
+    font-size: 1.3rem;
+}
+
+
+.product_details_descripcion h1{
+    width: max-content;
+    font-size: 4rem;
+    font-family: 'Bona Nova';
+    position: relative;
+}
+
+.product_details_descripcion h1::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: black;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 10px 10px 0 black;
+}
+
+#id{
+    margin-top: 4rem;
+}
+
+.details_button{
+    display: flex;
+    justify-content: center;
+}
+
+.product_details_precio{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 3rem;
+}
+
+.product_details_precio h2{
+    color: black;
+    font-size: 1.6rem;
+}
+
+.product_details_tipo{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.product_details_tipo{
+    font-size: 1.4rem;
+    color: #555555;
+}
+
+.details_button{
+    margin-right: 3rem;
+}
+
+.product_details_dropdown{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.product_details_entero{
+    display: flex;
+    flex-direction: column;
+}
+
+#slider{
+    margin-top: 5rem;
+}
+
+.slider_titulo h1{
+    font-family: "Montserrat";
+
+    font-size: 2rem;
+}
+
+.slider_titulo{
+    margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 1500px){
+
+    .product_details_foto{
+        width: 50%;
+        height: 35rem;
+    }
+
+    .product_details_descripcion{
+        width: 35%;
+        height: 100%;
+    }
+
+    .product_details_descripcion h1{
+        font-size: 2.7rem;
+    }
+
+    .product_details_descripcion p{
+        font-size: 1.15rem;
+    }
+
+    .product_details_dropdown h2{
+        font-size: 20px;
+    }
+
+    #slider{
+        margin-top: 1rem;
+    }
+  
+  
+  }
+
+
+  @media screen and (max-width: 1024px){
+
+    .product_details_foto{
+        width: 50%;
+        height: 30rem;
+    }
+
+    .product_details_descripcion{
+        width: 35%;
+        height: 100%;
+    }
+
+    .product_details_descripcion h1{
+        font-size: 2.3rem;
+    }
+
+
+    .product_details_dropdown h2{
+        font-size: 20px;
+    }
+
+    .product_details_dropdown {
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 0.5rem;
+    }
+
+    #id{
+        margin-top: 0.5rem;
+    }
+
+  }
+  
+  @media screen and (max-width: 863px){
+
+    .contenedor_product_details{
+        gap: 1.3rem;
+    }
+
+    .product_details_foto{
+        width: 95%;
+        height: 40rem;
+    }
+
+    .product_details_descripcion{
+        width: 80%;
+        height: 100%;
+    }
+
+    .product_details_descripcion h1{
+        font-size: 2.3rem;
+        
+    }
+
+    .product_details_dropdown {
+        display: flex;
+        flex-direction: row;
+        gap: 1.3rem;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+
+
+    .product_details_dropdown h2{
+        font-size: 20px;
+    }
+
+    #id{
+        margin-top: 1rem;
+    }
+
+    #slider{
+        margin-top: 1rem;
+    }
+  
+  }
+
+  @media screen and (max-width: 669px){
+
+    .product_details_foto{
+        width: 95%;
+        height: 29rem;
+    }
+
+    .product_details_descripcion{
+        width: 80%;
+        height: 100%;
+    }
+
+    .product_details_dropdown {
+        flex-wrap: wrap;
+    }
+
+    #id{
+        margin-top: 1rem;
+    }
+
+    #slider{
+        margin-top: 1rem;
+    }
+
+    .slider_titulo{
+        margin-bottom: 2rem;
+    }
+
+    .slider_titulo h1{
+        font-size: 1.3rem;
+    }
+  
+  }
+
+
+  @media screen and (max-width: 391px){
+
+    .product_details_foto{
+        width: 95%;
+        height: 28rem;
+    }
+
+    .product_details_descripcion h1{
+        
+        font-size: 2rem;
+    }
+
+    .product_details_foto{
+
+        height: 24rem;
+    }
+
+  }

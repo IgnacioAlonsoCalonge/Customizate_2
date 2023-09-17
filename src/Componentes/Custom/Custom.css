@@ -1,0 +1,16 @@
+.text_area{
+    font-size: 1.3rem;
+    font-family: "Montserrat";
+    width: 100%;
+}
+
+.foto_estampado_custom{
+    position: absolute;
+    z-index: 3;
+    width: 170px;
+    height: 170px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-60%);
+    opacity: 0.8;
+}

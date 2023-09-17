@@ -1,0 +1,103 @@
+.section_3_boton{
+    margin:  3rem 0;
+    display: flex;
+  }
+  
+  .section_3_boton a{
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: 1000;
+    color: white;
+    font-family: "Montserrat";
+    letter-spacing: 0.2rem;
+    border: 2px solid var(--color_azul);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(0, 0, 0, 0.37));
+    transition: 0.5s;
+  }
+  
+  .section_3_boton a:hover{
+    color: rgb(0, 0, 0);
+  }
+  
+  .section_3_boton a::before{
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    height: 2px;
+    width: 15px;
+    background: var(--color_azul);
+    box-shadow: 3px 10px var(--color_azul), 3px -10px var(--color_azul);
+    transform: translateY(-50%);
+    transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+    transition-delay: 0s,0.5s,0.5s,0.5s;
+  }
+  
+  .section_3_boton a:hover::before
+  {
+    width: 60%;
+    height: 100%;
+    left: 0px;
+    box-shadow: 5px 0 0 var(--color_azul),5px 0 0 var(--color_azul);
+  }
+  
+  .section_3_boton a::after{
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    height: 2px;
+    width: 15px;
+    background: var(--color_azul);
+    box-shadow: -3px 10px var(--color_azul), -3px -10px var(--color_azul);
+    transform: translateY(-50%);
+    transition: width 0.5s, right 0.5s, height 0.5s, box-shadow 0.5s;
+    transition-delay: 0s,0.5s,0.5s,0.5s;
+  }
+  
+  .section_3_boton a:hover::after
+  {
+    width: 60%;
+    height: 100%;
+    right: 2px;
+    box-shadow: 5px 0 0 var(--color_azul),5px 0 0 var(--color_azul);
+  }
+  
+  .section_3_boton a span{
+    position: relative;
+    z-index: 1000;
+    transition: 0.8s;
+  }
+  
+  .section_3_boton a span:hover{
+    color: black;
+  }
+
+  @media screen and (max-width: 1200px){
+    
+    .section_3_boton a{
+      font-size: 1rem;
+      letter-spacing: 0.05rem;
+    }
+}
+
+  @media screen and (max-width: 600px){
+    
+    .section_3_boton a{
+      font-size: 1rem;
+      letter-spacing: 0.05rem;
+      margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    
+  .section_3_boton a{
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 2rem;
+  }
+}

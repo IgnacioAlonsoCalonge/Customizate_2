@@ -1,0 +1,250 @@
+.contenedor_home {
+    position: relative;
+    width: 100%;
+    min-height: 52rem;
+    display: grid;
+    grid-template-columns: 40% 55%;
+    gap: 5%;
+    padding-top: 2rem;
+  }
+
+  .home_foto{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .home_introduccion{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3rem;
+  }
+
+  .home_introduccion p {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+
+  .home_introduccion h1{
+    font-size: 5rem;
+    font-family: "Bona Nova";
+    color: var(--color_titulo);
+    position: relative;
+    margin-bottom: 4rem;
+    margin-top: 0;
+  }
+
+  .home_introduccion h1::before{
+    content: "";
+    width: 300px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    bottom: -0.3rem;
+    left: 0;
+    transition: left 0.5s, width 0.5s;
+    transition-delay: 0s, 0.5s;
+  }
+
+  .home_introduccion h1:hover::before{
+      width: 0px;
+      left: -0.5rem;
+  }
+
+  .home_introduccion h1::after{
+    content: "";
+    width: 300px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    bottom: -0.8rem;
+    left: 1rem;
+    transition: left 0.5s, width 0.5s;
+    transition-delay: 0s,0.5s;
+  }
+
+  .home_introduccion h1:hover::after{
+    left: 2rem;
+    width: 0;
+  }
+
+  .home_introduccion h2{
+    font-size: 1.8rem;
+  }
+
+  .home_introduccion_2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .animacion {
+    height: 5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .animacion > div > div {
+    padding: 0rem 0.6rem;
+    height: 5rem;
+    margin-bottom: 5rem;
+    display: inline-block;
+    font-size: 4.5rem;
+    font-family: "Bona Nova";
+  }
+
+
+  .animacion div:first-child{
+    animation: text-animation 12s infinite;
+  }
+
+  @keyframes text-animation {
+    0% {
+        margin-top: -0.4rem;
+    }
+    10% {
+        margin-top:-0.4rem;
+    }
+    20% {
+        margin-top:-4em;
+    }
+    30% {
+        margin-top:-4rem;
+    }
+    40% {
+        margin-top:-10.7rem;
+    }
+
+    60% {
+        margin-top:-10.7rem;
+    }
+    70% {
+        margin-top:-4rem;
+    }
+    80% {
+        margin-top:-4rem;
+    }
+    90% {
+        margin-top:-0.4rem;
+    }
+    100% {
+        margin-top:-0.4rem;
+    }
+  }
+
+  @keyframes text-animation_responsive {
+    0% {
+        margin-top: 0.2rem;
+    }
+    10% {
+        margin-top: 0.2rem;
+    }
+    20% {
+        margin-top:-5.9rem;
+    }
+    30% {
+        margin-top:-5.9rem;
+    }
+    40% {
+        margin-top:-14rem;
+    }
+
+    60% {
+        margin-top:-14rem;
+    }
+    70% {
+        margin-top:-5.9rem;
+    }
+    80% {
+        margin-top:-5.9rem;
+    }
+    90% {
+        margin-top:0.2rem;
+    }
+    100% {
+        margin-top:0.2rem;
+    }
+  }
+
+  @media screen and (max-width:1400px){
+
+    .home_introduccion_2 h2{
+        font-size: 1.5rem;
+    }
+
+    .animacion > div > div {
+        font-size: 3rem;
+    }
+
+    .home_introduccion{
+        margin-left: 0.3rem;
+    }
+
+    .home_introduccion p{
+        width: 90%;
+        font-size: 1.25rem;
+    }
+
+    .home_introduccion h1{
+        font-size: 3.5rem;
+    }
+
+    .animacion div:first-child{
+        animation: text-animation_responsive 12s infinite;
+      }
+
+      .home_introduccion h1::before{
+        width: 210px;
+      }
+
+      .home_introduccion h1::after{
+        width: 210px;
+      }
+
+      .home_foto{
+        height: 80%;
+      }
+
+  }
+
+
+  @media screen and (max-width:1024px){
+
+    .home_foto{
+        display: none;
+    }
+
+    .contenedor_home{
+        display: flex;
+        justify-content: center;
+        min-height: 30rem;        
+    }
+
+    .home_introduccion p{
+      width: 90%;
+      font-size: 1.3rem;
+  }
+
+    .home_introduccion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+  }

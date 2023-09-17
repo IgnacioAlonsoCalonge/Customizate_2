@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root{
+  --color_red: #020508;
+  --color_titulo: #201c1c;
+
+  --color_section_2_tarjetas: rgb(150, 150, 150);
+
+  --color_section_3: #191817;
+
+  --color_azul: #ffffff;
+  
+  --color_boton_2: #030303;
+  --tamaño_contenedor:95%;
+}
+
+body{
+  margin: 0;
+  font-family: "Montserrat";
+  background: #f9f9f9;
+}
+
+.contenedor{
+  margin: 0 auto;
+  width: var(--tamaño_contenedor);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+

@@ -1,0 +1,162 @@
+#section_estamp{
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.pruebas_s{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 50% 45%;
+    gap: 5%;
+    margin: 0 auto;
+}
+
+.estados{
+    display: flex;
+    flex-direction: column;
+}
+
+.foto_cami{
+    width: 100%;
+    height: 700px;
+    border-radius: 2rem;
+    overflow: hidden;
+    border: solid 4px rgb(94, 93, 93);
+    position: relative;
+    z-index: 4;
+}
+
+.foto_estampado{
+    position: absolute;
+    z-index: 3;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-60%);
+}
+
+.foto_camisetas_color{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.colores_estamp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.rojo, .verde, .blanco, .negro, .gris, .gris_clarito{
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgb(155, 155, 155);
+    transition: 0.25s;
+}
+
+.activo_custom{
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+
+
+.rojo{
+    background: rgb(155, 30, 30);
+}
+
+.verde{
+    background: rgb(3, 66, 3);
+}
+
+.blanco{
+    background: rgb(247, 247, 247);
+}
+
+.negro{
+    background: black;
+}
+
+.gris{
+    background: rgb(59, 59, 59);
+}
+
+.gris_clarito{
+    background: rgb(143, 143, 143);
+}
+
+.customiza_estampados{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.mod h1{
+    margin-top: 0;
+}
+
+.swiper_my{
+    width: 85%;
+    height: 17rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    
+}
+
+.swiper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid rgb(90, 90, 90);
+    border-radius: 1rem;
+    transition: background-color 0.5s;
+}
+
+.foto_color_camis{
+    z-index: 4;
+}
+
+.swiper img.active{
+    background: #302b28;
+}
+
+.product_details_descripcion.mod{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.product_details_descripcion.mod p{
+    margin-top: 2rem;
+}
+
+.product_details_descripcion.mod h1{
+    margin-top: 0rem;
+    margin-bottom: 2.3rem;
+}
+
+.carrito_talla{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1200px){
+
+    
+}
